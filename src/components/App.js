@@ -96,7 +96,7 @@ export default function App() {
   const maxPossiblePoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
   useEffect(function () {
-    fetch("http://localhost:9000/questions")
+    fetch("https://quiz-api-smfm.onrender.com/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: 'dataReceived', payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }))
