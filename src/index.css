@@ -257,3 +257,91 @@ progress {
   font-size: inherit;
   padding: 0.8rem;
 }
+
+/* Default styles for larger screens (desktop) */
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+  }
+
+  .app-header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+  }
+
+  .btn-option {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+  body {
+    padding: 1.6rem;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .app-header {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .btn-option {
+    font-size: 1.4rem;
+  }
+
+  .timer {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+
+  .result {
+    font-size: 1.8rem;
+    padding: 1.6rem 0;
+  }
+
+  .loader-container {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+}
